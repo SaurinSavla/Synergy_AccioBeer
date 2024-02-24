@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Upload</title>
+
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">CSV File Upload</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="csv_file">Choose a CSV file:</label>
+                <input type="file" id="csv_file" name="csv_file" accept=".csv" class="form-control-file" required>
+            </div>
+            <button type="submit" class="btn btn-success">Upload</button>
+        </form>
+
+
+        <a href="https://mediafiles.botpress.cloud/f7d4a1f0-f21e-4e14-8c19-0a81e5f272e7/webchat/bot.html" class="btn btn-primary mt-3" target="_blank">ChatBot</a>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
