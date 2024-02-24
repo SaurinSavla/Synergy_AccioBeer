@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Doctors</title>
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-4">Home</h1>
-        <a href="/patients" class="btn btn-primary mt-3">Patients</a>
-        <a href="/doctors" class="btn btn-success mt-3">Doctors</a>
+        <h1 class="mt-4">Doctors</h1>
+        <a href="https://example-doctors.com" class="btn btn-success mt-3" target="_blank">Visit Doctors</a>
+        <a href="/doctors/upload" class="btn btn-primary mt-3">Upload CSV</a>
     </div>
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
