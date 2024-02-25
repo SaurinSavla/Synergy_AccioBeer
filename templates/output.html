@@ -11,12 +11,40 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-4">Output Page</h1>
+        <h1 class="mt-4">Diagnosis using AI Model</h1>
 
         <!-- Display the predicted output -->
+        <div class="mt-4" >
+            <div class="output-value text-center">{{ content }}</div>
+            <!-- <h2>Patient Info - </h2> -->
+            <!-- {{ output }} -->
+            
+        </div>
+
         <div class="mt-4">
-            <h2>Predicted Output</h2>
-            {{ output }}
+            <h2>Patient Info</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sex</th>
+                        <th>Age</th>
+                        <th>Education</th>
+                        <th>IQ</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in patient_info %}
+                        <tr>
+                            <td>{{ row['sex'] }}</td>
+                            <td>{{ row['age'] }}</td>
+                            <td>{{ row['education'] }}</td>
+                            <td>{{ row['IQ'] }}</td>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- Add Bootstrap JS and Popper.js -->

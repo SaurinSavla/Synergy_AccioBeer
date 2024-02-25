@@ -4,9 +4,31 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #59a3ec;
 }
 
 .container {
-    text-align: center;
+    background-color: #f4f4f4; /* Light gray background color */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Add background color to the output value */
+.output-value {
+    background-color: #b2dafb; /* Green color */
+    color: #444; /* White text color */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Style the table */
+.table {
+    margin-top: 20px;
+}
+
+/* Alternate row colors for better readability */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Light gray background */
 }
