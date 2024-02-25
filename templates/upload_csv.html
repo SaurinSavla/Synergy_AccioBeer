@@ -19,6 +19,14 @@
             <button type="submit" class="btn btn-success">Upload</button>
         </form>
     </div>
+
+
+    {% if prediction %}
+        {{ prediction }}
+    {% endif %}
+
+
+
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

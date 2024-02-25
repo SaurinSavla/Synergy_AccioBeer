@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors</title>
+    <title>Output Page</title>
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-4">Doctors</h1>
-        <a href="https://example-doctors.com" class="btn btn-success mt-3" target="_blank">Visit Doctors</a>
-        <a href="/doctors/upload" class="btn btn-primary mt-3">Upload CSV</a>
+        <h1 class="mt-4">Output Page</h1>
+
+        <!-- Display the predicted output -->
+        <div class="mt-4">
+            <h2>Predicted Output</h2>
+            {{ output }}
+        </div>
     </div>
-    
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
