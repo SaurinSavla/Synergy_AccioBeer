@@ -1,4 +1,6 @@
-<h2>AI-Driven Mental Health Monitoring and Suicide Detection Application</h2>
+**AI-Driven Mental Health Monitoring and Suicide Detection Application**
+
+<h4>This comprehensive application is built to monitor mental health of patients. Here are some features of the application:</h4>
 
 
 
